@@ -12,9 +12,9 @@
 <generator>quarto-1.8.25</generator>
 <lastBuildDate>Tue, 04 Nov 2025 06:00:00 GMT</lastBuildDate>
 <item>
-  <title>Do good NFL teams get less penalties called on them and more against their opponents?</title>
+  <title>Do good NFL teams get favored by the Referees?</title>
   <dc:creator>Nate Bloomquist</dc:creator>
-  <link>https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/</link>
+  <link>https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index.rmarkdown/</link>
   <description><![CDATA[ 
 
 
@@ -401,7 +401,7 @@ font-style: inherit;">element_blank</span>()</span>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index.rmarkdown/index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -782,7 +782,7 @@ font-style: inherit;">5</span>)</span>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index.rmarkdown/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -989,15 +989,12 @@ font-style: inherit;">win_pct =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mean</span>(win))</span>
 <span id="cb13-27"></span>
-<span id="cb13-28"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Get Chiefs data for the circle</span></span>
-<span id="cb13-29">chiefs_data <span class="ot" style="color: #003B4F;
+<span id="cb13-28">chiefs_data <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> penalties <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb13-30">  <span class="fu" style="color: #4758AB;
+<span id="cb13-29">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">inner_join</span>(wins, <span class="at" style="color: #657422;
 background-color: null;
@@ -1006,18 +1003,18 @@ background-color: null;
 font-style: inherit;">"team"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb13-31">  <span class="fu" style="color: #4758AB;
+<span id="cb13-30">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(team <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"KC"</span>)</span>
-<span id="cb13-32"></span>
-<span id="cb13-33">penalties <span class="sc" style="color: #5E5E5E;
+<span id="cb13-31"></span>
+<span id="cb13-32">penalties <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb13-34">  <span class="fu" style="color: #4758AB;
+<span id="cb13-33">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">inner_join</span>(wins, <span class="at" style="color: #657422;
 background-color: null;
@@ -1026,14 +1023,14 @@ background-color: null;
 font-style: inherit;">"team"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb13-35">  <span class="fu" style="color: #4758AB;
+<span id="cb13-34">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">aes</span>(win_pct, net_penalty_diff)) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-36">  <span class="fu" style="color: #4758AB;
+<span id="cb13-35">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_hline</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -1050,7 +1047,7 @@ background-color: null;
 font-style: inherit;">"gray"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-37">  <span class="fu" style="color: #4758AB;
+<span id="cb13-36">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -1067,7 +1064,7 @@ background-color: null;
 font-style: inherit;">label =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"No net advantage"</span>, </span>
-<span id="cb13-38">           <span class="at" style="color: #657422;
+<span id="cb13-37">           <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
 background-color: null;
@@ -1082,7 +1079,7 @@ background-color: null;
 font-style: inherit;">"italic"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-39">  <span class="fu" style="color: #4758AB;
+<span id="cb13-38">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_smooth</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -1103,7 +1100,7 @@ background-color: null;
 font-style: inherit;">0.2</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-40">  <span class="fu" style="color: #4758AB;
+<span id="cb13-39">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -1122,7 +1119,7 @@ background-color: null;
 font-style: inherit;">label =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Trend line (95% CI)"</span>, </span>
-<span id="cb13-41">           <span class="at" style="color: #657422;
+<span id="cb13-40">           <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
 background-color: null;
@@ -1137,7 +1134,7 @@ background-color: null;
 font-style: inherit;">"italic"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-42">  <span class="fu" style="color: #4758AB;
+<span id="cb13-41">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_nfl_logos</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1154,10 +1151,10 @@ background-color: null;
 font-style: inherit;">0.8</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-43">  <span class="co" style="color: #5E5E5E;
+<span id="cb13-42">  <span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Add circle around Chiefs</span></span>
-<span id="cb13-44">  <span class="fu" style="color: #4758AB;
+<span id="cb13-43">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -1170,7 +1167,7 @@ background-color: null;
 font-style: inherit;">y =</span> chiefs_data<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>net_penalty_diff,</span>
-<span id="cb13-45">           <span class="at" style="color: #657422;
+<span id="cb13-44">           <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
@@ -1193,46 +1190,46 @@ background-color: null;
 font-style: inherit;">NA</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-46">  <span class="fu" style="color: #4758AB;
+<span id="cb13-45">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">labs</span>(</span>
-<span id="cb13-47">    <span class="at" style="color: #657422;
+<span id="cb13-46">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Do the Chiefs Get Bailed Out When it Matters Most?"</span>,</span>
-<span id="cb13-48">    <span class="at" style="color: #657422;
+<span id="cb13-47">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Penalties in 4th quarter, close games, red zone plays, and critical downs vs Win %"</span>,</span>
-<span id="cb13-49">    <span class="at" style="color: #657422;
+<span id="cb13-48">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Win Percentage (2020-2024)"</span>,</span>
-<span id="cb13-50">    <span class="at" style="color: #657422;
+<span id="cb13-49">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Penalty Advantage"</span>,</span>
-<span id="cb13-51">    <span class="at" style="color: #657422;
+<span id="cb13-50">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">caption =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Data: nflverse 2020-2024 | Nate Bloomquist"</span></span>
-<span id="cb13-52">  ) <span class="sc" style="color: #5E5E5E;
+<span id="cb13-51">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-53">  <span class="fu" style="color: #4758AB;
+<span id="cb13-52">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_minimal</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-54">  <span class="fu" style="color: #4758AB;
+<span id="cb13-53">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(</span>
-<span id="cb13-55">    <span class="at" style="color: #657422;
+<span id="cb13-54">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1245,7 +1242,7 @@ background-color: null;
 font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">14</span>),</span>
-<span id="cb13-56">    <span class="at" style="color: #657422;
+<span id="cb13-55">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1258,15 +1255,15 @@ background-color: null;
 font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"gray"</span>),</span>
-<span id="cb13-57">    <span class="at" style="color: #657422;
+<span id="cb13-56">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">element_blank</span>()</span>
-<span id="cb13-58">  ) <span class="sc" style="color: #5E5E5E;
+<span id="cb13-57">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb13-59">  <span class="fu" style="color: #4758AB;
+<span id="cb13-58">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">scale_x_continuous</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -1282,12 +1279,12 @@ font-style: inherit;">percent_format</span>())</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index.rmarkdown/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>This graph shows that when it matters the most (redzone plays, close games, etc.) and shows that the Chiefs have the second highest penalty advantage in the NFL from 2020-2024 and the highest win percentege to go with it. However, the penalty advantage isn’t incredibly outrageous. Some may argue that even this slight advantage points towards an unfair advantage, but I view it differently. The way that I see it, the Chiefs are a very good team and if they are given an opportunity, such as a bad penalty call, they will take advantage of it.</p>
+<p>This graph shows that when it matters the most (red-zone plays, close games, etc.) and shows that the Chiefs have the second highest penalty advantage in the NFL from 2020-2024 and the highest win percentage to go with it. However, the penalty advantage isn’t incredibly outrageous. Some may argue that even this slight advantage points towards an unfair advantage, but I view it differently. The way that I see it, the Chiefs are a very good team and if they are given an opportunity, such as a bad penalty call, they will take advantage of it.</p>
 <p>In conclusion, I believe that the reason people believe that the Chiefs receive bias officiating from Referees is because they are a good team who is given more prime time games and media attention. With this increased attention, the bad calls that are prevalent around the entire NFL are put on full display.</p>
 
 
@@ -1297,9 +1294,9 @@ font-style: inherit;">percent_format</span>())</span></code></pre></div></div>
   <category>NFL</category>
   <category>Penalties</category>
   <category>Chiefs</category>
-  <guid>https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/</guid>
+  <guid>https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index.rmarkdown/</guid>
   <pubDate>Tue, 04 Nov 2025 06:00:00 GMT</pubDate>
-  <media:content url="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/pic.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://natebloomquist.github.io/posts/penalty-differential-for-nfl-teams/index.rmarkdown/pic.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
