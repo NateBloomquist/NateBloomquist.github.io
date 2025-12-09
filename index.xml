@@ -557,7 +557,7 @@ font-style: inherit;">NULL</span>,</span>
 background-color: null;
 font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Count"</span>,</span>
+font-style: inherit;">"Left=Sacks Right=Interceptions"</span>,</span>
 <span id="cb1-81">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">fill =</span> <span class="st" style="color: #20794D;
@@ -773,29 +773,17 @@ font-style: inherit;">sum</span>(offense_snaps <span class="sc" style="color: #5
 background-color: null;
 font-style: inherit;">+</span> defense_snaps <span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">+</span> st_snaps, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">na.rm =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>),</span>
+font-style: inherit;">+</span> st_snaps),</span>
 <span id="cb2-7">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">defense_snaps =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">sum</span>(defense_snaps, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">na.rm =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>),</span>
+font-style: inherit;">sum</span>(defense_snaps),</span>
 <span id="cb2-8">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">defense_pct =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">mean</span>(defense_pct, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">na.rm =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>),</span>
+font-style: inherit;">mean</span>(defense_pct),</span>
 <span id="cb2-9">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">.groups =</span> <span class="st" style="color: #20794D;
@@ -823,11 +811,7 @@ font-style: inherit;">filter</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">grepl</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"Smith"</span>, player, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">ignore.case =</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span>))</span>
+font-style: inherit;">"Smith"</span>, player))</span>
 <span id="cb2-15"></span>
 <span id="cb2-16"></span>
 <span id="cb2-17">top_safeties <span class="ot" style="color: #003B4F;
